@@ -1,0 +1,208 @@
+@import '_null';
+
+body {
+    background-color: #cacaca;
+    
+} 
+
+.wrapper {
+    width: 100%;
+    min-height: 100lvh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culc-body {
+    background: rgb(254,254,254);
+    background: linear-gradient(140deg, rgba(254,254,254,1) 0%, rgba(249,249,249,1) 13%, rgba(243,243,243,1) 33%, rgba(229,229,229,1) 100%);
+    width: 100%;
+    max-width: 423px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+    
+}
+
+.dark-body {
+    transition: all 0.5s ease 0s;
+    background: rgb(46,47,48);
+    background: linear-gradient(87deg, rgba(46,47,48,1) 11%, rgba(37,38,40,1) 23%, rgba(0,3,9,1) 100%);
+}
+
+.culc-body__form-inp {
+    width: 100%;
+    height: 70px;
+    font-size: 45px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    background: none;
+}
+
+.culc-body__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.culc-body__form-info {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px 34px 20px;
+}
+
+.culc-body__form-btns {
+    width: 100%;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    gap: 25px;
+    padding: 24px 34px;
+    border-radius: 40px;
+    background: rgb(158,232,255);
+    background: linear-gradient(180deg, rgba(158,232,255,1) 16%, rgba(90,206,255,1) 49%, rgba(121,175,255,0.9303944315545244) 78%);
+    transition: all 0.5s ease 0s;
+}
+
+.form-btns__dark {
+    transition: all 0.5s ease 0s;
+    background: rgb(66,134,155);
+    background: linear-gradient(87deg, rgba(66,134,155,1) 2%, rgba(42,125,161,1) 28%, rgba(34,78,145,1) 65%, rgba(0,18,63,1) 100%);
+}
+
+.btns {
+    font-size: 24px;
+    font-weight: 700;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease 0s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.789);
+    }
+}
+
+.__dark {
+    transition: all 0.5s ease 0s;
+    background-color: rgba(202, 3, 3, 0.3);
+}
+
+.btns-block {
+    display: grid;
+    gap: 25px;
+}
+
+.btns-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.btns-operations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btns-operations__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btns-operations .btns, .btns-operations__column .btns {
+    background-color: rgba(255, 255, 255, 0);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.789);
+    }
+} 
+
+.culc-body__form-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 0 1 100%;
+}
+
+.block-theme {
+    width: 122px;
+    height: 44px;
+    border-radius: 40px;
+    background-color: #A9DCFD;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: all 0.6s ease 0s;
+}
+
+.block-theme__dark {
+    background-color: #1B6A9C;
+}
+
+.block-theme__bg {
+    position: absolute;
+    top: 0;
+    right: 54px;
+    width: 68px;
+    height: 100%;
+    border-radius: 40px;
+    background: #D8EEFF no-repeat;
+    transition: all 0.3s ease 0s;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.dark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68px;
+    height: 100%;
+    background: #003661 no-repeat;
+    transition: all 0.5s ease 0s;
+}
+
+.btn-theme {
+    width: 100%;
+    background: none;
+    padding: 7px 17px;
+    border-radius: 40px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-btn {
+    width: 30px;
+    height: 30px;
+}
+
+.sun-path__dark path {
+    transition: all 0.7s ease 0s;
+    fill: rgba(251, 251, 251, 0.4);
+}
+
+.moon-path__dark path {
+    transition: all 0.7s ease 0s;
+    fill: hsla(0, 0%, 98%, 0.8);
+}
+
+
+
