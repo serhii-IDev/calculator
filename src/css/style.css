@@ -173,9 +173,23 @@ body {
   background-color: hwb(0 2% 98%/0.304);
   color: #ffffff;
 }
+.dark-btn > button:hover, .dark-btn > .btns-numbers button:hover {
+  background-color: rgba(166, 166, 166, 0.789);
+}
 
 .dark-btn > .btns-operations button {
   color: #ffffff;
+  transition: all 0.5s ease 0s;
+}
+.dark-btn > .btns-operations button:hover {
+  background-color: rgba(166, 166, 166, 0.789);
+}
+
+.btns-operations__column.dark-btn .btns {
+  transition: all 0.5s ease 0s;
+}
+.btns-operations__column.dark-btn .btns:hover {
+  background-color: rgba(166, 166, 166, 0.789);
 }
 
 .dark-btn .btns-operations, .btns-operations__column.dark-btn {
@@ -208,8 +222,17 @@ body {
   transition: all 0.5s ease 0s;
 }
 
+.btns-numbers .btns {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease 0s;
+}
+.btns-numbers .btns:hover {
+  background-color: rgba(255, 255, 255, 0.789);
+}
+
 .btns-operations .btns, .btns-operations__column .btns {
   background-color: rgba(255, 255, 255, 0);
+  transition: all 0.3s ease 0s;
 }
 .btns-operations .btns:hover, .btns-operations__column .btns:hover {
   background-color: rgba(255, 255, 255, 0.789);
