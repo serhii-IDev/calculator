@@ -89,10 +89,10 @@ body {
   background: linear-gradient(140deg, rgb(254, 254, 254) 0%, rgb(249, 249, 249) 13%, rgb(243, 243, 243) 33%, rgb(229, 229, 229) 100%);
   width: 100%;
   max-width: 423px;
-  height: 900px;
+  height: 100lvh;
+  max-height: 900px;
   display: flex;
   justify-content: center;
-  border-radius: 40px;
   overflow: hidden;
   transition: all 0.5s ease 0s;
 }
@@ -113,6 +113,10 @@ body {
   background: none;
 }
 
+.dark-inp {
+  color: #fff;
+}
+
 .culc-body__form {
   display: flex;
   flex-direction: column;
@@ -131,10 +135,9 @@ body {
   max-height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-radius: 20px;
   gap: 25px;
   padding: 24px 34px;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   background: rgb(158, 232, 255);
   background: linear-gradient(180deg, rgb(158, 232, 255) 16%, rgb(90, 206, 255) 49%, rgba(121, 175, 255, 0.9303944316) 78%);
   transition: all 0.5s ease 0s;
@@ -160,14 +163,23 @@ body {
   background-color: rgba(255, 255, 255, 0.789);
 }
 
-.__dark {
-  transition: all 0.5s ease 0s;
-  background-color: rgba(202, 3, 3, 0.3);
-}
-
 .btns-block {
   display: grid;
   gap: 25px;
+}
+
+.dark-btn > button, .dark-btn > .btns-numbers button {
+  transition: all 0.5s ease 0s;
+  background-color: hwb(0 2% 98%/0.304);
+  color: #ffffff;
+}
+
+.dark-btn > .btns-operations button {
+  color: #ffffff;
+}
+
+.dark-btn .btns-operations, .btns-operations__column.dark-btn {
+  background-color: hwb(0 2% 98%/0.304);
 }
 
 .btns-numbers {
@@ -183,6 +195,7 @@ body {
   gap: 25px;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease 0s;
 }
 
 .btns-operations__column {
@@ -192,6 +205,7 @@ body {
   gap: 25px;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease 0s;
 }
 
 .btns-operations .btns, .btns-operations__column .btns {
